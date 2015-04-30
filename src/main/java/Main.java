@@ -4,7 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
         TestStat testStat = new TestStat();
-        testStat.createListOfFiles(Paths.get("testFolder"));
+        testStat.createListOfFiles(Paths.get(args[0]));
+//        testStat.createListOfFiles(Paths.get("testFolder"));
 
 
 

@@ -6,7 +6,15 @@ import java.util.List;
 
 
 public class TestStat {
-    private static  List<Path> listPaths;
+    private static   List<Path> listPaths;
+
+    public static List<Path> getListPaths() {
+        return listPaths;
+    }
+    public static void setListPaths(List<Path> listPaths) {
+        TestStat.listPaths = listPaths;
+    }
+
     public void showList(){
         for (Path i :listPaths) {
             System.out.println(i);
@@ -15,7 +23,6 @@ public class TestStat {
     public void createListOfFiles(Path path){
         getPaths(path);
     }
-
     private List<Path> getPaths(Path path){
         listPaths = new ArrayList<Path>();
         if (Files.exists(path)) {
