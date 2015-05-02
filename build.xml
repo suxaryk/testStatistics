@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="testinfotodb" default="all">
+
+  <property file="build.properties"/>
+
+  <path id="classpath">
+    <fileset dir="${lib.dir}" includes="junit-dep-4.10.jar"/>
+  </path>
+
+  <target name="clean">
+    <echo>Cleaning the directories</echo>
+    <delete dir="${build.dir}"/>
+    <delete dir="${target.report.dir}"/>
+  </target>
+
+  <target name="init" depends="clean">
+
+    <mkdir dir="${target.report.dir}" />
+    <mkdir dir="${target.report.dir}/html/" />
+
+
+  </target>
+  <target name="compile" depends="init">
+    <!--<mkdir dir="${build.dir}" />-->
+    <!--<javac destdir="${target.classes.java.dir}" includeantruntime="false">-->
+      <!--<src path="${src.java.dir}" />-->
+    <!--</javac>-->
+
+  </target>
+
+
+  <target name="run-tests" depends="compile">
+    <junit printsummary="yes"  fork="yes" haltonerror="no" haltonfailure="no">
+      <formatter type="plain" usefile="false" />
+      <formatter type="xml" />
+      <batchtest todir="${target.report.dir}">
+        <fileset dir="${testdir.dir}">
+          <include name="**/*Test.java" />
+          <exclude name="**/Test*All.java" />
+        </fileset>
+      </batchtest>
+      <classpath>
+        <pathelement path="lib/junit-dep-4.10.jar" />
+      </classpath>
+    </junit>
+  </target>
+
+  <target name="report" depends="run-tests">
+    <junitreport todir="${target.report.dir}">
+      <fileset dir="${target.report.dir}">
+        <include name="TEST-*.xml" />
+      </fileset>
+      <report  todir="${target.report.dir}/html" />
+    </junitreport>
+  </target>
+
+
+  <target name="all" depends="report" description="build all"/>
+</project>
