@@ -5,26 +5,28 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class TestStat {
-    private static   List<Path> listPaths;
+public class TestsStat {
+    private List<Path> listPaths;
 
-    public static List<Path> getListPaths() {
+    public TestsStat(Path path) {
+        listPaths = new ArrayList<>();
+        try {
+            getPaths(path);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public List<Path> getListPaths() {
         return listPaths;
     }
-    public static void setListPaths(List<Path> listPaths) {
-        TestStat.listPaths = listPaths;
-    }
-
     public void showList(){
         for (Path i :listPaths) {
             System.out.println(i);
         }
     }
-    public void createListOfFiles(Path path){
-        getPaths(path);
-    }
-    private List<Path> getPaths(Path path){
-        listPaths = new ArrayList<Path>();
+    private List<Path> getPaths(Path path) throws NullPointerException {
         if (Files.exists(path)) {
             if (Files.isDirectory(path)) {
                 for (File file : path.toFile().listFiles()) {
@@ -33,10 +35,9 @@ public class TestStat {
             } else {
                     if (path.getFileName().toString().endsWith("Test.java")){
                         listPaths.add(path);
-                        System.out.println(listPaths.get(listPaths.size() - 1));
                     }
             }
-        }
+        } else throw new IllegalArgumentException("Invalid folder path");
         return listPaths;
     }
 
