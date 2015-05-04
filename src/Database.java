@@ -35,34 +35,20 @@ public class Database {
             preparedStatement = connection.prepareStatement(INSERT_NEW);
 
 
-//            for (int i = 0; i < list.size(); i++) {
-                  DOMparser(list.get(0));
+            for (int i = 0; i < list.size(); i++) {
+                test = new Test();
+                DOMparser(list.get(i));
 
 
-//            preparedStatement.setString(1, String.valueOf(0));
-//            preparedStatement.setString(2, test.getName());
-//            preparedStatement.setString(3, test.getDateTime());
-//            preparedStatement.setString(4, String.valueOf(test.isResult()));
-//            preparedStatement.setString(5, String.valueOf(test.getOutTime()));
-//            preparedStatement.setString(6, test.getDscription());
-//            preparedStatement.addBatch();
+            preparedStatement.setString(1, String.valueOf(i));
+            preparedStatement.setString(2, test.getName());
+            preparedStatement.setString(3, test.getDateTime());
+            preparedStatement.setString(4, String.valueOf(test.isResult()));
+            preparedStatement.setString(5, String.valueOf(test.getOutTime()));
+            preparedStatement.setString(6, test.getDscription());
+            preparedStatement.addBatch();
 
-            System.out.println(String.valueOf(0));
-            System.out.println(test.getName());
-            System.out.println(test.getDateTime());
-            System.out.println(String.valueOf(test.isResult()));
-            System.out.println(String.valueOf(test.getOutTime()));
-            System.out.println(test.getDscription());
-
-
-//            preparedStatement.setString(1, "4");
-//            preparedStatement.setString(2, "someTest.java");
-//            preparedStatement.setString(3, "2015-05-02 00:09:43");
-//            preparedStatement.setString(4, "1");
-//            preparedStatement.setString(5, "0.0");
-//            preparedStatement.setString(6, "error ");
-//            preparedStatement.addBatch();
-//            }
+            }
 
 
 
@@ -70,6 +56,12 @@ public class Database {
             preparedStatement.executeBatch();
 
         } catch (SQLException e) {
+            e.printStackTrace();
+        } catch (ParserConfigurationException e) {
+            e.printStackTrace();
+        } catch (SAXException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
             e.printStackTrace();
         } finally {
             if (connection != null) {
@@ -89,35 +81,30 @@ public class Database {
         }
     }
 
-    public void DOMparser(Path path){
+    public void DOMparser(Path path) throws ParserConfigurationException, IOException, SAXException {
 
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+        DocumentBuilder builder = factory.newDocumentBuilder();
+        Document document = builder.parse(path.toString());
+        Element element = document.getDocumentElement();
 
 
 
-        try {
-            DocumentBuilder builder = factory.newDocumentBuilder();
-            Document document = builder.parse(path.toString());
-            document.getDocumentElement();
-            Element element;
-            test = new Test();
-            test.setName(element.getAttribute("name"));
+        test.setName(element.getAttribute("name"));
+        test.setDateTime(element.getAttribute("timestamp").replace("T", " "));
+        test.setResult(Integer.parseInt(element.getAttribute("failures")));
+        test.setOutTime(Double.parseDouble(element.getAttribute("time")));
+        test.setDscription(document.getElementsByTagName("error").item(0).getTextContent());
 
-            test.setDateTime(element.getAttribute("timestamp").replace("T", " "));
-            test.setResult(Integer.parseInt(element.getAttribute("failures")));
-            test.setOutTime(Double.parseDouble(element.getAttribute("time")));
-            test.setDscription(document.getElementsByTagName("error").item(0).getTextContent());
-
-//            test =  new Test( element.getAttribute("name"),  element.getAttribute("timestamp").replace("T", " "),  Integer.parseInt(element.getAttribute("failures")), Double.parseDouble (element.getAttribute("time")),   document.getElementsByTagName("error").item(0).getTextContent());
-        } catch (ParserConfigurationException e) {
-            e.printStackTrace();
-        } catch (SAXException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
+//        test = new Test(
+//                element.getAttribute("name"),
+//                element.getAttribute("timestamp").replace("T", " "),
+//                Integer.parseInt(element.getAttribute("failures")),
+//                Long.parseLong(element.getAttribute("time")),
+//                document.getElementsByTagName("error").item(0).getTextContent()
+//        );
     }
+
 
 
 }

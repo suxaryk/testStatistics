@@ -1,197 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="107dc596-b05b-4003-8a0d-a0efabc22c6a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testFolder/codec.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/0_BinaryEncoderAbstractTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/0_BinaryEncoderAbstractTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/10_Base32Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/10_Base32Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/11_Base64Codec13Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/11_Base64Codec13Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/12_Base64InputStreamTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/12_Base64InputStreamTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/13_Base64OutputStreamTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/13_Base64OutputStreamTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/14_Base64Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/14_Base64Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/15_BaseNCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/15_BaseNCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/16_BinaryCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/16_BinaryCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/17_HexTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/17_HexTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/18_StringUtilsTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/18_StringUtilsTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/19_Apr1CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/19_Apr1CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/1_CalculateTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/1_CalculateTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/20_B64Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/20_B64Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/21_CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/21_CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/22_DigestUtilsTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/22_DigestUtilsTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/23_Md5CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/23_Md5CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/24_Sha256CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/24_Sha256CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/25_Sha2CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/25_Sha2CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/26_Sha512CryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/26_Sha512CryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/27_UnixCryptTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/27_UnixCryptTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/28_Caverphone1Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/28_Caverphone1Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/29_Caverphone2Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/29_Caverphone2Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/2_CharEncodingTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/2_CharEncodingTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/30_ColognePhoneticTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/30_ColognePhoneticTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/31_DoubleMetaphone2Test-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/31_DoubleMetaphone2Test.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/32_DoubleMetaphoneTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/32_DoubleMetaphoneTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/33_MatchRatingApproachEncoderTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/33_MatchRatingApproachEncoderTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/34_MetaphoneTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/34_MetaphoneTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/35_NysiisTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/35_NysiisTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/36_RefinedSoundexTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/36_RefinedSoundexTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/37_SoundexTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/37_SoundexTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/38_BeiderMorseEncoderTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/38_BeiderMorseEncoderTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/39_CacheSubSequencePerformanceTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/39_CacheSubSequencePerformanceTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/3_CharsetsTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/3_CharsetsTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/40_LanguageGuessingTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/40_LanguageGuessingTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/41_PhoneticEnginePerformanceTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/41_PhoneticEnginePerformanceTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/42_PhoneticEngineRegressionTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/42_PhoneticEngineRegressionTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/43_PhoneticEngineTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/43_PhoneticEngineTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/44_RuleTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/44_RuleTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/45_BCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/45_BCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/46_QCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/46_QCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/47_QuotedPrintableCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/47_QuotedPrintableCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/48_RFC1522CodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/48_RFC1522CodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/49_URLCodecTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/49_URLCodecTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/4_DecoderExceptionTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/4_DecoderExceptionTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/50_UtilsTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/50_UtilsTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/5_EncoderExceptionTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/5_EncoderExceptionTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/6_StringEncoderAbstractTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/6_StringEncoderAbstractTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/7_StringEncoderComparatorTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/7_StringEncoderComparatorTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/8_Base32InputStreamTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/8_Base32InputStreamTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/9_Base32OutputStreamTest-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/9_Base32OutputStreamTest.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.BinaryEncoderAbstractTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.CalculateTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.CharEncodingTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.CharsetsTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.DecoderExceptionTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.EncoderExceptionTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.StringEncoderAbstractTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.StringEncoderComparatorTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base32InputStreamTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base32OutputStreamTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base32Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base64Codec13Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base64InputStreamTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base64OutputStreamTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.Base64Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.BaseNCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.BinaryCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.HexTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.binary.StringUtilsTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.Apr1CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.B64Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.DigestUtilsTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.Md5CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.Sha256CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.Sha2CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.Sha512CryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.digest.UnixCryptTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.Caverphone1Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.Caverphone2Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.ColognePhoneticTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.DoubleMetaphone2Test.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.DoubleMetaphoneTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.MatchRatingApproachEncoderTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.MetaphoneTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.NysiisTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.RefinedSoundexTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.SoundexTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.BeiderMorseEncoderTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.CacheSubSequencePerformanceTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.LanguageGuessingTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.PhoneticEnginePerformanceTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.PhoneticEngineRegressionTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.PhoneticEngineTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.language.bm.RuleTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.BCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.QCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.QuotedPrintableCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.RFC1522CodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.URLCodecTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TEST-codec.net.UtilsTest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/TESTS-TestSuites.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Test.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Utils.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/all-tests.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/allclasses-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/alltests-errors.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/alltests-fails.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/alltests-skipped.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/overview-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/overview-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/package-frame.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/binary/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/digest/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/language/bm/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/codec/net/package-summary.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/junit/html/stylesheet.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testFolder/codec/binary/Base64Test.java" afterPath="$PROJECT_DIR$/testFolder/codec/binary/Base64Test.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testFolder/codec/language/bm/BeiderMorseEncoderTest.java" afterPath="$PROJECT_DIR$/testFolder/codec/language/bm/BeiderMorseEncoderTest.java" />
+    <list default="true" id="107dc596-b05b-4003-8a0d-a0efabc22c6a" name="Default" comment="+ solve">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Database.java" afterPath="$PROJECT_DIR$/src/Database.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testFolder/codec/language/RefinedSoundexTest.java" afterPath="$PROJECT_DIR$/testFolder/codec/language/RefinedSoundexTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.properties" afterPath="$PROJECT_DIR$/build.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testStatistics.iml" afterPath="$PROJECT_DIR$/testStatistics.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Utils.java" afterPath="$PROJECT_DIR$/src/Utils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="testStatistics.iws" />
@@ -243,7 +58,7 @@
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -252,11 +67,26 @@
       <file leaf-file-name="Database.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.9001919">
-              <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+            <state vertical-scroll-proportion="1.2705883">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding>
-                <marker date="1430709997984" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
+                <marker date="1430711019088" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="mydb.testsStatistics" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/7b2ab5d2/731fe547-672e-49f3-8f02-cdb3cc55cdac/mydb..testsStatistics">
+          <provider editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
@@ -278,7 +108,7 @@
         <entry file="file://$PROJECT_DIR$/src/Utils.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="2" selection-end-line="102" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#792#793#0" expanded="true" />
@@ -340,8 +170,8 @@
         <option value="$PROJECT_DIR$/testFolder/codec/binary/Base64Test.java" />
         <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/build.xml" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Utils.java" />
         <option value="$PROJECT_DIR$/src/Database.java" />
       </list>
@@ -838,7 +668,7 @@
       <workItem from="1430670960445" duration="776000" />
       <workItem from="1430671813978" duration="21000" />
       <workItem from="1430678755925" duration="7977000" />
-      <workItem from="1430689201819" duration="20352000" />
+      <workItem from="1430689201819" duration="21346000" />
     </task>
     <task id="LOCAL-00001" summary="+ junit xml ant">
       <created>1430690478263</created>
@@ -846,11 +676,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430690478263</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="+ DOMparser + db">
+      <created>1430710116891</created>
+      <option name="number" value="00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1430710116891</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29126000" />
+    <option name="totallyTimeSpent" value="30120000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -872,25 +708,52 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25040388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26171243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1631664" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Services Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3620489" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3620489" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.589057" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53201395" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21071012" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44749597" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37485448" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2197092" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37485448" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26171243" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25040388" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.589057" sideWeight="0.503231" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2197092" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37485448" sideWeight="0.49676898" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32945284" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Services Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3620489" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.53201395" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -905,18 +768,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="+ junit xml ant" />
-    <option name="LAST_COMMIT_MESSAGE" value="+ junit xml ant" />
+    <MESSAGE value="+ DOMparser + db" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ DOMparser + db" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Database.java</url>
-          <line>38</line>
-          <properties />
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="12" />
     </breakpoint-manager>
     <watches-manager />
@@ -976,7 +832,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <marker date="1430709997984" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
+            <marker date="1430711019088" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -1012,7 +868,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <marker date="1430709997984" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
+            <marker date="1430711019088" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>
@@ -1227,31 +1083,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/7b2ab5d2/731fe547-672e-49f3-8f02-cdb3cc55cdac/mydb..testsStatistics">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-5.1.31.jar!/com/mysql/jdbc/PreparedStatement.class">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.31752577">
           <caret line="441" column="17" selection-start-line="441" selection-start-column="17" selection-end-line="441" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="40" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
           <folding />
         </state>
       </provider>
@@ -1270,7 +1105,7 @@
     <entry file="file://$PROJECT_DIR$/src/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="48" selection-start-line="82" selection-start-column="48" selection-end-line="82" selection-end-column="48" />
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="2" selection-end-line="102" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#792#793#0" expanded="true" />
@@ -1279,12 +1114,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/7b2ab5d2/731fe547-672e-49f3-8f02-cdb3cc55cdac/mydb..testsStatistics">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Database.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.9001919">
-          <caret line="106" column="16" selection-start-line="106" selection-start-column="16" selection-end-line="106" selection-end-column="16" />
+        <state vertical-scroll-proportion="1.2705883">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
           <folding>
-            <marker date="1430709997984" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
+            <marker date="1430711019088" expanded="true" signature="710:762" placeholder="INSERT INTO ..." />
           </folding>
         </state>
       </provider>

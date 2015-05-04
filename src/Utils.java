@@ -65,40 +65,42 @@ public class Utils {
         } else throw new IllegalArgumentException("Invalid folder path");
         return listPaths;
     }
-//    public Test parseXML(Path path){
-//            return DOMparser(path);
-//    }
-
-//    public Test DOMparser(Path path){
-//
-//        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-//        DocumentBuilder builder = null;
-//        Document document = null;
-//        Element element = null;
+//    public void parseXML(Path path){
 //        try {
-//            builder = factory.newDocumentBuilder();
-//            document = builder.parse(path.toString());
-//            document.getDocumentElement();
-//
+//            return DOMparser(path);
 //        } catch (ParserConfigurationException e) {
-//            e.printStackTrace();
-//        } catch (SAXException e) {
 //            e.printStackTrace();
 //        } catch (IOException e) {
 //            e.printStackTrace();
-//        } finally {
-//                return new Test(
-//                        element.getAttribute("name"),
-//                        element.getAttribute("timestamp").replace("T", " "),
-//                        Integer.parseInt(element.getAttribute("failures")),
-//                        Long.parseLong(element.getAttribute("time")),
-//                        document.getElementsByTagName("error").item(0).getTextContent()
-//                );
-//
+//        } catch (SAXException e) {
+//            e.printStackTrace();
 //        }
 //
 //    }
 
+//    public void DOMparser(Path path) throws ParserConfigurationException, IOException, SAXException {
+//
+//        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+//        DocumentBuilder builder = factory.newDocumentBuilder();
+//        Document document = builder.parse(path.toString());
+//        Element element = document.getDocumentElement();
+////        //System.out.println(new Date(element.getAttribute("timestamp").replace("T", " ")));
+////        System.out.println(element.getAttribute("name"));
+////        System.out.println(element.getAttribute("failures"));
+////        System.out.println(element.getAttribute("time"));
+////        System.out.println(element.getAttribute("timestamp").replace("T", " "));
+////        System.out.println(document.getElementsByTagName("error").item(0).getTextContent());
+////        Integer.parseInt(element.getAttribute("failures"));
+//        Test tmpTest = new Test(
+//                                element.getAttribute("name"),
+//                                element.getAttribute("timestamp").replace("T", " "),
+//                                Integer.parseInt(element.getAttribute("failures")),
+//                                Long.parseLong(element.getAttribute("time")),
+//                                document.getElementsByTagName("error").item(0).getTextContent()
+//                                );
+//
+//
+//    }
 
 
 
@@ -106,4 +108,40 @@ public class Utils {
 
 
 
+    private String readFiles(Path inputPath){
+        {
+            String taskText = "";
+            try {
+
+                in = new BufferedReader(
+                        new InputStreamReader(
+                                new FileInputStream(
+                                        new File(inputPath.toString())), "UTF8"));
+                String str;
+                do {
+                    str = in.readLine();
+
+                    if(str.equals("*/")) break;
+                    if(str.equals("public class Solution")) break;
+                    // System.out.println(str);
+                    taskText += str + "\n";
+
+                }while(str != null);
+            } catch (UnsupportedEncodingException e){
+                e.printStackTrace();
+            } catch (IOException e){
+                e.printStackTrace();
+            } catch (Exception e){
+                e.printStackTrace();
+            }
+            finally {
+                try {
+                    in.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+                return taskText + "*/";
+
+            }}
+    }
 }
