@@ -32,7 +32,7 @@ import org.junit.Test;
  *
  * @since 1.6
  */
-public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringEncoder&gt; {
+public class BeiderMorseEncoderTest extends StringEncoderAbstractTest<StringEncoder> {
     private static final char[] TEST_CHARS = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'o', 'u' };
 
     private void assertNotEmpty(final BeiderMorseEncoder bmpm, final String value) throws EncoderException {
@@ -59,7 +59,7 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
     @Test
     public void testAllChars() throws EncoderException {
         final BeiderMorseEncoder bmpm = createGenericApproxEncoder();
-        for (char c = Character.MIN_VALUE; c &lt; Character.MAX_VALUE; c++) {
+        for (char c = Character.MIN_VALUE; c < Character.MAX_VALUE; c++) {
             bmpm.encode(Character.toString(c));
         }
     }
@@ -67,7 +67,7 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
     @Test
     public void testAsciiEncodeNotEmpty1Letter() throws EncoderException {
         final BeiderMorseEncoder bmpm = createGenericApproxEncoder();
-        for (char c = 'a'; c &lt;= 'z'; c++) {
+        for (char c = 'a'; c <= 'z'; c++) {
             final String value = Character.toString(c);
             final String valueU = value.toUpperCase();
             assertNotEmpty(bmpm, value);
@@ -78,8 +78,8 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
     @Test
     public void testAsciiEncodeNotEmpty2Letters() throws EncoderException {
         final BeiderMorseEncoder bmpm = createGenericApproxEncoder();
-        for (char c1 = 'a'; c1 &lt;= 'z'; c1++) {
-            for (char c2 = 'a'; c2 &lt;= 'z'; c2++) {
+        for (char c1 = 'a'; c1 <= 'z'; c1++) {
+            for (char c2 = 'a'; c2 <= 'z'; c2++) {
                 final String value = new String(new char[] { c1, c2 });
                 final String valueU = value.toUpperCase();
                 assertNotEmpty(bmpm, value);
@@ -139,9 +139,9 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
 
     @Test
     public void testOOM() throws EncoderException {
-        final String phrase = "200697900'--&gt;&amp;#1913348150;&lt;/  bceaeef &gt;aadaabcf\"aedfbff&lt;!--\'--&gt;?&gt;cae"
-                + "cfaaa&gt;&lt;?&amp;#&lt;!--&lt;/script&gt;&amp;lang&amp;fc;aadeaf?&gt;&gt;&amp;bdquo&lt;    cc =\"abff\"    /&gt;&lt;/   afe  &gt;"
-                + "&lt;script&gt;&lt;!-- f(';&lt;    cf aefbeef = \"bfabadcf\" ebbfeedd = fccabeb &gt;";
+        final String phrase = "200697900'-->&amp;#1913348150;</  bceaeef >aadaabcf\"aedfbff<!--\'-->?>cae"
+                + "cfaaa><?&amp;#<!--</script>&amp;lang&amp;fc;aadeaf?>>&amp;bdquo<    cc =\"abff\"    /></   afe  >"
+                + "<script><!-- f(';<    cf aefbeef = \"bfabadcf\" ebbfeedd = fccabeb >";
 
         final BeiderMorseEncoder encoder = new BeiderMorseEncoder();
         encoder.setNameType(NameType.GENERIC);
@@ -149,10 +149,10 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
         encoder.setMaxPhonemes(10);
 
         final String phonemes = encoder.encode(phrase);
-        assertTrue(phonemes.length() &gt; 0);
+        assertTrue(phonemes.length() > 0);
 
         final String[] phonemeArr = phonemes.split("\\|");
-        assertTrue(phonemeArr.length &lt;= 10);
+        assertTrue(phonemeArr.length <= 10);
     }
 
     @Test
@@ -192,7 +192,7 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
         final BeiderMorseEncoder bmpm = this.createGenericApproxEncoder();
         final StringBuilder stringBuffer = new StringBuilder();
         stringBuffer.append(TEST_CHARS[0]);
-        for (int i = 0, j = 1; i &lt; 40; i++, j++) {
+        for (int i = 0, j = 1; i < 40; i++, j++) {
             if (j == TEST_CHARS.length) {
                 j = 0;
             }
@@ -206,7 +206,7 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
         final BeiderMorseEncoder bmpm = this.createGenericApproxEncoder();
         final String phrase = "ItstheendoftheworldasweknowitandIfeelfine";
 
-        for (int i = 1; i &lt;= phrase.length(); i++) {
+        for (int i = 1; i <= phrase.length(); i++) {
             bmpm.encode(phrase.subSequence(0, i));
         }
     }
@@ -216,7 +216,7 @@ public class BeiderMorseEncoderTest extends StringEncoderAbstractTest&lt;StringE
         final BeiderMorseEncoder bmpm = this.createGenericApproxEncoder();
         final String phrase = "abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz";
 
-        for (int i = 1; i &lt;= phrase.length(); i++) {
+        for (int i = 1; i <= phrase.length(); i++) {
             bmpm.encode(phrase.subSequence(0, i));
         }
     }

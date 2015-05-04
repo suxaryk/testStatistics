@@ -36,7 +36,7 @@ import org.junit.Test;
 /**
  * Test cases for Base64 class.
  *
- * @see &lt;a href="http://www.ietf.org/rfc/rfc2045.txt"&gt;RFC 2045&lt;/a&gt;
+ * @see <a href="http://www.ietf.org/rfc/rfc2045.txt">RFC 2045</a>
  * @version $Id: Base64Test.html 891688 2013-12-24 20:49:46Z ggregory $
  */
 public class Base64Test {
@@ -343,7 +343,7 @@ public class Base64Test {
     // encode/decode a large random array
     @Test
     public void testEncodeDecodeRandom() {
-        for (int i = 1; i &lt; 5; i++) {
+        for (int i = 1; i < 5; i++) {
             final byte[] data = new byte[this.getRandom().nextInt(10000) + 1];
             this.getRandom().nextBytes(data);
             final byte[] enc = Base64.encodeBase64(data);
@@ -356,7 +356,7 @@ public class Base64Test {
     // encode/decode random arrays from size 0 to size 11
     @Test
     public void testEncodeDecodeSmall() {
-        for (int i = 0; i &lt; 12; i++) {
+        for (int i = 0; i < 12; i++) {
             final byte[] data = new byte[i];
             this.getRandom().nextBytes(data);
             final byte[] enc = Base64.encodeBase64(data);
@@ -545,7 +545,7 @@ public class Base64Test {
     @Test
     public void testPairs() {
         assertEquals("AAA=", new String(Base64.encodeBase64(new byte[]{0, 0})));
-        for (int i = -128; i &lt;= 127; i++) {
+        for (int i = -128; i <= 127; i++) {
             final byte test[] = {(byte) i, (byte) i};
             assertTrue(Arrays.equals(test, Base64.decodeBase64(Base64.encodeBase64(test))));
         }
@@ -577,17 +577,17 @@ public class Base64Test {
 
     /**
      * Tests RFC 4648 section 10 test vectors.
-     * &lt;ul&gt;
-     * &lt;li&gt;BASE64("") = ""&lt;/li&gt;
-     * &lt;li&gt;BASE64("f") = "Zg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fo") = "Zm8="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foo") = "Zm9v"&lt;/li&gt;
-     * &lt;li&gt;BASE64("foob") = "Zm9vYg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fooba") = "Zm9vYmE="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foobar") = "Zm9vYmFy"&lt;/li&gt;
-     * &lt;/ul&gt;
+     * <ul>
+     * <li>BASE64("") = ""</li>
+     * <li>BASE64("f") = "Zg=="</li>
+     * <li>BASE64("fo") = "Zm8="</li>
+     * <li>BASE64("foo") = "Zm9v"</li>
+     * <li>BASE64("foob") = "Zm9vYg=="</li>
+     * <li>BASE64("fooba") = "Zm9vYmE="</li>
+     * <li>BASE64("foobar") = "Zm9vYmFy"</li>
+     * </ul>
      *
-     * @see &lt;a href="http://tools.ietf.org/html/rfc4648"&gt;http://tools.ietf.org/html/rfc4648&lt;/a&gt;
+     * @see <a href="http://tools.ietf.org/html/rfc4648">http://tools.ietf.org/html/rfc4648</a>
      */
     @Test
     public void testRfc4648Section10Decode() {
@@ -602,17 +602,17 @@ public class Base64Test {
 
     /**
      * Tests RFC 4648 section 10 test vectors.
-     * &lt;ul&gt;
-     * &lt;li&gt;BASE64("") = ""&lt;/li&gt;
-     * &lt;li&gt;BASE64("f") = "Zg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fo") = "Zm8="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foo") = "Zm9v"&lt;/li&gt;
-     * &lt;li&gt;BASE64("foob") = "Zm9vYg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fooba") = "Zm9vYmE="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foobar") = "Zm9vYmFy"&lt;/li&gt;
-     * &lt;/ul&gt;
+     * <ul>
+     * <li>BASE64("") = ""</li>
+     * <li>BASE64("f") = "Zg=="</li>
+     * <li>BASE64("fo") = "Zm8="</li>
+     * <li>BASE64("foo") = "Zm9v"</li>
+     * <li>BASE64("foob") = "Zm9vYg=="</li>
+     * <li>BASE64("fooba") = "Zm9vYmE="</li>
+     * <li>BASE64("foobar") = "Zm9vYmFy"</li>
+     * </ul>
      *
-     * @see &lt;a href="http://tools.ietf.org/html/rfc4648"&gt;http://tools.ietf.org/html/rfc4648&lt;/a&gt;
+     * @see <a href="http://tools.ietf.org/html/rfc4648">http://tools.ietf.org/html/rfc4648</a>
      */
     @Test
     public void testRfc4648Section10DecodeWithCrLf() {
@@ -628,17 +628,17 @@ public class Base64Test {
 
     /**
      * Tests RFC 4648 section 10 test vectors.
-     * &lt;ul&gt;
-     * &lt;li&gt;BASE64("") = ""&lt;/li&gt;
-     * &lt;li&gt;BASE64("f") = "Zg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fo") = "Zm8="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foo") = "Zm9v"&lt;/li&gt;
-     * &lt;li&gt;BASE64("foob") = "Zm9vYg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fooba") = "Zm9vYmE="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foobar") = "Zm9vYmFy"&lt;/li&gt;
-     * &lt;/ul&gt;
+     * <ul>
+     * <li>BASE64("") = ""</li>
+     * <li>BASE64("f") = "Zg=="</li>
+     * <li>BASE64("fo") = "Zm8="</li>
+     * <li>BASE64("foo") = "Zm9v"</li>
+     * <li>BASE64("foob") = "Zm9vYg=="</li>
+     * <li>BASE64("fooba") = "Zm9vYmE="</li>
+     * <li>BASE64("foobar") = "Zm9vYmFy"</li>
+     * </ul>
      *
-     * @see &lt;a href="http://tools.ietf.org/html/rfc4648"&gt;http://tools.ietf.org/html/rfc4648&lt;/a&gt;
+     * @see <a href="http://tools.ietf.org/html/rfc4648">http://tools.ietf.org/html/rfc4648</a>
      */
     @Test
     public void testRfc4648Section10Encode() {
@@ -653,17 +653,17 @@ public class Base64Test {
 
     /**
      * Tests RFC 4648 section 10 test vectors.
-     * &lt;ul&gt;
-     * &lt;li&gt;BASE64("") = ""&lt;/li&gt;
-     * &lt;li&gt;BASE64("f") = "Zg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fo") = "Zm8="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foo") = "Zm9v"&lt;/li&gt;
-     * &lt;li&gt;BASE64("foob") = "Zm9vYg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fooba") = "Zm9vYmE="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foobar") = "Zm9vYmFy"&lt;/li&gt;
-     * &lt;/ul&gt;
+     * <ul>
+     * <li>BASE64("") = ""</li>
+     * <li>BASE64("f") = "Zg=="</li>
+     * <li>BASE64("fo") = "Zm8="</li>
+     * <li>BASE64("foo") = "Zm9v"</li>
+     * <li>BASE64("foob") = "Zm9vYg=="</li>
+     * <li>BASE64("fooba") = "Zm9vYmE="</li>
+     * <li>BASE64("foobar") = "Zm9vYmFy"</li>
+     * </ul>
      *
-     * @see &lt;a href="http://tools.ietf.org/html/rfc4648"&gt;http://tools.ietf.org/html/rfc4648&lt;/a&gt;
+     * @see <a href="http://tools.ietf.org/html/rfc4648">http://tools.ietf.org/html/rfc4648</a>
      */
     @Test
     public void testRfc4648Section10DecodeEncode() {
@@ -684,17 +684,17 @@ public class Base64Test {
 
     /**
      * Tests RFC 4648 section 10 test vectors.
-     * &lt;ul&gt;
-     * &lt;li&gt;BASE64("") = ""&lt;/li&gt;
-     * &lt;li&gt;BASE64("f") = "Zg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fo") = "Zm8="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foo") = "Zm9v"&lt;/li&gt;
-     * &lt;li&gt;BASE64("foob") = "Zm9vYg=="&lt;/li&gt;
-     * &lt;li&gt;BASE64("fooba") = "Zm9vYmE="&lt;/li&gt;
-     * &lt;li&gt;BASE64("foobar") = "Zm9vYmFy"&lt;/li&gt;
-     * &lt;/ul&gt;
+     * <ul>
+     * <li>BASE64("") = ""</li>
+     * <li>BASE64("f") = "Zg=="</li>
+     * <li>BASE64("fo") = "Zm8="</li>
+     * <li>BASE64("foo") = "Zm9v"</li>
+     * <li>BASE64("foob") = "Zm9vYg=="</li>
+     * <li>BASE64("fooba") = "Zm9vYmE="</li>
+     * <li>BASE64("foobar") = "Zm9vYmFy"</li>
+     * </ul>
      *
-     * @see &lt;a href="http://tools.ietf.org/html/rfc4648"&gt;http://tools.ietf.org/html/rfc4648&lt;/a&gt;
+     * @see <a href="http://tools.ietf.org/html/rfc4648">http://tools.ietf.org/html/rfc4648</a>
      */
     @Test
     public void testRfc4648Section10EncodeDecode() {
@@ -820,7 +820,7 @@ public class Base64Test {
         assertEquals("Zg==", new String(Base64.encodeBase64(new byte[]{(byte) 102})));
         assertEquals("Zw==", new String(Base64.encodeBase64(new byte[]{(byte) 103})));
         assertEquals("aA==", new String(Base64.encodeBase64(new byte[]{(byte) 104})));
-        for (int i = -128; i &lt;= 127; i++) {
+        for (int i = -128; i <= 127; i++) {
             final byte test[] = {(byte) i};
             assertTrue(Arrays.equals(test, Base64.decodeBase64(Base64.encodeBase64(test))));
         }
@@ -997,262 +997,262 @@ public class Base64Test {
         assertEquals("AAA5", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 57})));
         assertEquals("AAA6", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 58})));
         assertEquals("AAA7", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 59})));
-0        assertEquals("AAA8", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 60})));
-1        assertEquals("AAA9", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 61})));
-2        assertEquals("AAA+", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 62})));
-3        assertEquals("AAA/", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 63})));
-4    }
-5
-6    @Test
-7    public void testTripletsChunked() {
-8        assertEquals("AAAA\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 0})));
-9        assertEquals("AAAB\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 1})));
-0        assertEquals("AAAC\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 2})));
-1        assertEquals("AAAD\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 3})));
-2        assertEquals("AAAE\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 4})));
-3        assertEquals("AAAF\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 5})));
-4        assertEquals("AAAG\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 6})));
-5        assertEquals("AAAH\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 7})));
-6        assertEquals("AAAI\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 8})));
-7        assertEquals("AAAJ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 9})));
-8        assertEquals("AAAK\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 10})));
-9        assertEquals("AAAL\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 11})));
-0        assertEquals("AAAM\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 12})));
-1        assertEquals("AAAN\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 13})));
-2        assertEquals("AAAO\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 14})));
-3        assertEquals("AAAP\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 15})));
-4        assertEquals("AAAQ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 16})));
-5        assertEquals("AAAR\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 17})));
-6        assertEquals("AAAS\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 18})));
-7        assertEquals("AAAT\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 19})));
-8        assertEquals("AAAU\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 20})));
-9        assertEquals("AAAV\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 21})));
-0        assertEquals("AAAW\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 22})));
-1        assertEquals("AAAX\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 23})));
-2        assertEquals("AAAY\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 24})));
-3        assertEquals("AAAZ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 25})));
-4        assertEquals("AAAa\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 26})));
-5        assertEquals("AAAb\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 27})));
-6        assertEquals("AAAc\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 28})));
-7        assertEquals("AAAd\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 29})));
-8        assertEquals("AAAe\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 30})));
-9        assertEquals("AAAf\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 31})));
-0        assertEquals("AAAg\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 32})));
-1        assertEquals("AAAh\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 33})));
-2        assertEquals("AAAi\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 34})));
-3        assertEquals("AAAj\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 35})));
-4        assertEquals("AAAk\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 36})));
-5        assertEquals("AAAl\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 37})));
-6        assertEquals("AAAm\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 38})));
-7        assertEquals("AAAn\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 39})));
-8        assertEquals("AAAo\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 40})));
-9        assertEquals("AAAp\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 41})));
-0        assertEquals("AAAq\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 42})));
-1        assertEquals("AAAr\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 43})));
-2        assertEquals("AAAs\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 44})));
-3        assertEquals("AAAt\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 45})));
-4        assertEquals("AAAu\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 46})));
-5        assertEquals("AAAv\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 47})));
-6        assertEquals("AAAw\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 48})));
-7        assertEquals("AAAx\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 49})));
-8        assertEquals("AAAy\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 50})));
-9        assertEquals("AAAz\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 51})));
-0        assertEquals("AAA0\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 52})));
-1        assertEquals("AAA1\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 53})));
-2        assertEquals("AAA2\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 54})));
-3        assertEquals("AAA3\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 55})));
-4        assertEquals("AAA4\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 56})));
-5        assertEquals("AAA5\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 57})));
-6        assertEquals("AAA6\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 58})));
-7        assertEquals("AAA7\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 59})));
-8        assertEquals("AAA8\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 60})));
-9        assertEquals("AAA9\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 61})));
-0        assertEquals("AAA+\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 62})));
-1        assertEquals("AAA/\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 63})));
-2    }
-3
-4    /**
-5     * Tests url-safe Base64 against random data, sizes 0 to 150.
-6     */
-7    @Test
-8    public void testUrlSafe() {
-9        // test random data of sizes 0 thru 150
-0        for (int i = 0; i &lt;= 150; i++) {
-1            final byte[][] randomData = Base64TestData.randomData(i, true);
-2            final byte[] encoded = randomData[1];
-3            final byte[] decoded = randomData[0];
-4            final byte[] result = Base64.decodeBase64(encoded);
-5            assertTrue("url-safe i=" + i, Arrays.equals(decoded, result));
-6            assertFalse("url-safe i=" + i + " no '='", Base64TestData.bytesContain(encoded, (byte) '='));
-7            assertFalse("url-safe i=" + i + " no '\\'", Base64TestData.bytesContain(encoded, (byte) '\\'));
-8            assertFalse("url-safe i=" + i + " no '+'", Base64TestData.bytesContain(encoded, (byte) '+'));
-9        }
-0
-1    }
-2
-3    /**
-4     * Base64 encoding of UUID's is a common use-case, especially in URL-SAFE mode. This test case ends up being the
-5     * "URL-SAFE" JUnit's.
-6     *
-7     * @throws DecoderException
-8     *             if Hex.decode() fails - a serious problem since Hex comes from our own commons-codec!
-9     */
-0    @Test
-1    public void testUUID() throws DecoderException {
-2        // The 4 UUID's below contains mixtures of + and / to help us test the
-3        // URL-SAFE encoding mode.
-4        final byte[][] ids = new byte[4][];
-5
-6        // ids[0] was chosen so that it encodes with at least one +.
-7        ids[0] = Hex.decodeHex("94ed8d0319e4493399560fb67404d370".toCharArray());
-8
-9        // ids[1] was chosen so that it encodes with both / and +.
-0        ids[1] = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());
-1
-2        // ids[2] was chosen so that it encodes with at least one /.
-3        ids[2] = Hex.decodeHex("64be154b6ffa40258d1a01288e7c31ca".toCharArray());
-4
-5        // ids[3] was chosen so that it encodes with both / and +, with /
-6        // right at the beginning.
-7        ids[3] = Hex.decodeHex("ff7f8fc01cdb471a8c8b5a9306183fe8".toCharArray());
-8
-9        final byte[][] standard = new byte[4][];
-0        standard[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg+2dATTcA==");
-1        standard[1] = StringUtils.getBytesUtf8("K/fMJwH+Q5e0nr7tWsxwkA==");
-2        standard[2] = StringUtils.getBytesUtf8("ZL4VS2/6QCWNGgEojnwxyg==");
-3        standard[3] = StringUtils.getBytesUtf8("/3+PwBzbRxqMi1qTBhg/6A==");
-4
-5        final byte[][] urlSafe1 = new byte[4][];
-6        // regular padding (two '==' signs).
-7        urlSafe1[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA==");
-8        urlSafe1[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA==");
-9        urlSafe1[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg==");
-0        urlSafe1[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A==");
-1
-2        final byte[][] urlSafe2 = new byte[4][];
-3        // single padding (only one '=' sign).
-4        urlSafe2[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA=");
-5        urlSafe2[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA=");
-6        urlSafe2[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg=");
-7        urlSafe2[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A=");
-8
-9        final byte[][] urlSafe3 = new byte[4][];
-0        // no padding (no '=' signs).
-1        urlSafe3[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA");
-2        urlSafe3[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA");
-3        urlSafe3[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg");
-4        urlSafe3[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A");
-5
-6        for (int i = 0; i &lt; 4; i++) {
-7            final byte[] encodedStandard = Base64.encodeBase64(ids[i]);
-8            final byte[] encodedUrlSafe = Base64.encodeBase64URLSafe(ids[i]);
-9            final byte[] decodedStandard = Base64.decodeBase64(standard[i]);
-0            final byte[] decodedUrlSafe1 = Base64.decodeBase64(urlSafe1[i]);
-1            final byte[] decodedUrlSafe2 = Base64.decodeBase64(urlSafe2[i]);
-2            final byte[] decodedUrlSafe3 = Base64.decodeBase64(urlSafe3[i]);
-3
-4            // Very important debugging output should anyone
-5            // ever need to delve closely into this stuff.
-6            if (false) {
-7                System.out.println("reference: [" + Hex.encodeHexString(ids[i]) + "]");
-8                System.out.println("standard:  [" +
-9                        Hex.encodeHexString(decodedStandard) +
-0                    "] From: [" +
-1                    StringUtils.newStringUtf8(standard[i]) +
-2                    "]");
-3                System.out.println("safe1:     [" +
-4                        Hex.encodeHexString(decodedUrlSafe1) +
-5                    "] From: [" +
-6                    StringUtils.newStringUtf8(urlSafe1[i]) +
-7                    "]");
-8                System.out.println("safe2:     [" +
-9                        Hex.encodeHexString(decodedUrlSafe2) +
-0                    "] From: [" +
-1                    StringUtils.newStringUtf8(urlSafe2[i]) +
-2                    "]");
-3                System.out.println("safe3:     [" +
-4                        Hex.encodeHexString(decodedUrlSafe3) +
-5                    "] From: [" +
-6                    StringUtils.newStringUtf8(urlSafe3[i]) +
-7                    "]");
-8            }
-9
-0            assertTrue("standard encode uuid", Arrays.equals(encodedStandard, standard[i]));
-1            assertTrue("url-safe encode uuid", Arrays.equals(encodedUrlSafe, urlSafe3[i]));
-2            assertTrue("standard decode uuid", Arrays.equals(decodedStandard, ids[i]));
-3            assertTrue("url-safe1 decode uuid", Arrays.equals(decodedUrlSafe1, ids[i]));
-4            assertTrue("url-safe2 decode uuid", Arrays.equals(decodedUrlSafe2, ids[i]));
-5            assertTrue("url-safe3 decode uuid", Arrays.equals(decodedUrlSafe3, ids[i]));
-6        }
-7    }
-8
-9    @Test
-0    public void testByteToStringVariations() throws DecoderException {
-1        final Base64 base64 = new Base64(0);
-2        final byte[] b1 = StringUtils.getBytesUtf8("Hello World");
-3        final byte[] b2 = new byte[0];
-4        final byte[] b3 = null;
-5        final byte[] b4 = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());  // for url-safe tests
-6
-7        assertEquals("byteToString Hello World", "SGVsbG8gV29ybGQ=", base64.encodeToString(b1));
-8        assertEquals("byteToString static Hello World", "SGVsbG8gV29ybGQ=", Base64.encodeBase64String(b1));
-9        assertEquals("byteToString \"\"", "", base64.encodeToString(b2));
-0        assertEquals("byteToString static \"\"", "", Base64.encodeBase64String(b2));
-1        assertEquals("byteToString null", null, base64.encodeToString(b3));
-2        assertEquals("byteToString static null", null, Base64.encodeBase64String(b3));
-3        assertEquals("byteToString UUID", "K/fMJwH+Q5e0nr7tWsxwkA==", base64.encodeToString(b4));
-4        assertEquals("byteToString static UUID", "K/fMJwH+Q5e0nr7tWsxwkA==", Base64.encodeBase64String(b4));
-5        assertEquals("byteToString static-url-safe UUID", "K_fMJwH-Q5e0nr7tWsxwkA", Base64.encodeBase64URLSafeString(b4));
-6    }
-7
-8    @Test
-9    public void testStringToByteVariations() throws DecoderException {
-0        final Base64 base64 = new Base64();
-1        final String s1 = "SGVsbG8gV29ybGQ=\r\n";
-2        final String s2 = "";
-3        final String s3 = null;
-4        final String s4a = "K/fMJwH+Q5e0nr7tWsxwkA==\r\n";
-5        final String s4b = "K_fMJwH-Q5e0nr7tWsxwkA";
-6        final byte[] b4 = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());  // for url-safe tests
-7
-8        assertEquals("StringToByte Hello World", "Hello World", StringUtils.newStringUtf8(base64.decode(s1)));
-9        assertEquals("StringToByte Hello World", "Hello World", StringUtils.newStringUtf8((byte[])base64.decode((Object)s1)));
-0        assertEquals("StringToByte static Hello World", "Hello World", StringUtils.newStringUtf8(Base64.decodeBase64(s1)));
-1        assertEquals("StringToByte \"\"", "", StringUtils.newStringUtf8(base64.decode(s2)));
-2        assertEquals("StringToByte static \"\"", "", StringUtils.newStringUtf8(Base64.decodeBase64(s2)));
-3        assertEquals("StringToByte null", null, StringUtils.newStringUtf8(base64.decode(s3)));
-4        assertEquals("StringToByte static null", null, StringUtils.newStringUtf8(Base64.decodeBase64(s3)));
-5        assertTrue("StringToByte UUID", Arrays.equals(b4, base64.decode(s4b)));
-6        assertTrue("StringToByte static UUID", Arrays.equals(b4, Base64.decodeBase64(s4a)));
-7        assertTrue("StringToByte static-url-safe UUID", Arrays.equals(b4, Base64.decodeBase64(s4b)));
-8    }
-9
-0    private String toString(final byte[] data) {
-1        final StringBuilder buf = new StringBuilder();
-2        for (int i = 0; i &lt; data.length; i++) {
-3            buf.append(data[i]);
-4            if (i != data.length - 1) {
-5                buf.append(",");
-6            }
-7        }
-8        return buf.toString();
-9    }
-0
-1    /**
-2     * Tests a lineSeparator much bigger than DEFAULT_BUFFER_SIZE.
-3     *
-4     * @see "&lt;a href='http://mail-archives.apache.org/mod_mbox/commons-dev/201202.mbox/%3C4F3C85D7.5060706@snafu.de%3E'&gt;dev@commons.apache.org&lt;/a&gt;"
-5     */
-6    @Test
-7    @Ignore
-8    public void testHugeLineSeparator() {
-9        final int BaseNCodec_DEFAULT_BUFFER_SIZE = 8192;
-0        final int Base64_BYTES_PER_ENCODED_BLOCK = 4;
-1        final byte[] baLineSeparator = new byte[BaseNCodec_DEFAULT_BUFFER_SIZE * 4 - 3];
-2        final Base64 b64 = new Base64(Base64_BYTES_PER_ENCODED_BLOCK, baLineSeparator);
-3        final String strOriginal = "Hello World";
-4        final String strDecoded = new String(b64.decode(b64.encode(StringUtils.getBytesUtf8(strOriginal))));
-5        assertEquals("testDEFAULT_BUFFER_SIZE", strOriginal, strDecoded);
-6    }
-7
-8}
+        assertEquals("AAA8", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 60})));
+        assertEquals("AAA9", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 61})));
+        assertEquals("AAA+", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 62})));
+        assertEquals("AAA/", new String(Base64.encodeBase64(new byte[]{(byte) 0, (byte) 0, (byte) 63})));
+    }
+
+    @Test
+    public void testTripletsChunked() {
+        assertEquals("AAAA\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 0})));
+        assertEquals("AAAB\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 1})));
+        assertEquals("AAAC\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 2})));
+        assertEquals("AAAD\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 3})));
+        assertEquals("AAAE\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 4})));
+        assertEquals("AAAF\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 5})));
+        assertEquals("AAAG\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 6})));
+        assertEquals("AAAH\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 7})));
+        assertEquals("AAAI\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 8})));
+        assertEquals("AAAJ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 9})));
+        assertEquals("AAAK\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 10})));
+        assertEquals("AAAL\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 11})));
+        assertEquals("AAAM\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 12})));
+        assertEquals("AAAN\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 13})));
+        assertEquals("AAAO\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 14})));
+        assertEquals("AAAP\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 15})));
+        assertEquals("AAAQ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 16})));
+        assertEquals("AAAR\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 17})));
+        assertEquals("AAAS\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 18})));
+        assertEquals("AAAT\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 19})));
+        assertEquals("AAAU\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 20})));
+        assertEquals("AAAV\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 21})));
+        assertEquals("AAAW\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 22})));
+        assertEquals("AAAX\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 23})));
+        assertEquals("AAAY\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 24})));
+        assertEquals("AAAZ\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 25})));
+        assertEquals("AAAa\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 26})));
+        assertEquals("AAAb\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 27})));
+        assertEquals("AAAc\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 28})));
+        assertEquals("AAAd\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 29})));
+        assertEquals("AAAe\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 30})));
+        assertEquals("AAAf\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 31})));
+        assertEquals("AAAg\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 32})));
+        assertEquals("AAAh\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 33})));
+        assertEquals("AAAi\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 34})));
+        assertEquals("AAAj\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 35})));
+        assertEquals("AAAk\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 36})));
+        assertEquals("AAAl\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 37})));
+        assertEquals("AAAm\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 38})));
+        assertEquals("AAAn\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 39})));
+        assertEquals("AAAo\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 40})));
+        assertEquals("AAAp\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 41})));
+        assertEquals("AAAq\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 42})));
+        assertEquals("AAAr\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 43})));
+        assertEquals("AAAs\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 44})));
+        assertEquals("AAAt\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 45})));
+        assertEquals("AAAu\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 46})));
+        assertEquals("AAAv\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 47})));
+        assertEquals("AAAw\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 48})));
+        assertEquals("AAAx\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 49})));
+        assertEquals("AAAy\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 50})));
+        assertEquals("AAAz\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 51})));
+        assertEquals("AAA0\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 52})));
+        assertEquals("AAA1\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 53})));
+        assertEquals("AAA2\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 54})));
+        assertEquals("AAA3\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 55})));
+        assertEquals("AAA4\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 56})));
+        assertEquals("AAA5\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 57})));
+        assertEquals("AAA6\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 58})));
+        assertEquals("AAA7\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 59})));
+        assertEquals("AAA8\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 60})));
+        assertEquals("AAA9\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 61})));
+        assertEquals("AAA+\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 62})));
+        assertEquals("AAA/\r\n", new String(Base64.encodeBase64Chunked(new byte[]{(byte) 0, (byte) 0, (byte) 63})));
+    }
+
+    /**
+     * Tests url-safe Base64 against random data, sizes 0 to 150.
+     */
+    @Test
+    public void testUrlSafe() {
+        // test random data of sizes 0 thru 150
+        for (int i = 0; i <= 150; i++) {
+            final byte[][] randomData = Base64TestData.randomData(i, true);
+            final byte[] encoded = randomData[1];
+            final byte[] decoded = randomData[0];
+            final byte[] result = Base64.decodeBase64(encoded);
+            assertTrue("url-safe i=" + i, Arrays.equals(decoded, result));
+            assertFalse("url-safe i=" + i + " no '='", Base64TestData.bytesContain(encoded, (byte) '='));
+            assertFalse("url-safe i=" + i + " no '\\'", Base64TestData.bytesContain(encoded, (byte) '\\'));
+            assertFalse("url-safe i=" + i + " no '+'", Base64TestData.bytesContain(encoded, (byte) '+'));
+        }
+
+    }
+
+    /**
+     * Base64 encoding of UUID's is a common use-case, especially in URL-SAFE mode. This test case ends up being the
+     * "URL-SAFE" JUnit's.
+     *
+     * @throws DecoderException
+     *             if Hex.decode() fails - a serious problem since Hex comes from our own commons-codec!
+     */
+    @Test
+    public void testUUID() throws DecoderException {
+        // The 4 UUID's below contains mixtures of + and / to help us test the
+        // URL-SAFE encoding mode.
+        final byte[][] ids = new byte[4][];
+
+        // ids[0] was chosen so that it encodes with at least one +.
+        ids[0] = Hex.decodeHex("94ed8d0319e4493399560fb67404d370".toCharArray());
+
+        // ids[1] was chosen so that it encodes with both / and +.
+        ids[1] = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());
+
+        // ids[2] was chosen so that it encodes with at least one /.
+        ids[2] = Hex.decodeHex("64be154b6ffa40258d1a01288e7c31ca".toCharArray());
+
+        // ids[3] was chosen so that it encodes with both / and +, with /
+        // right at the beginning.
+        ids[3] = Hex.decodeHex("ff7f8fc01cdb471a8c8b5a9306183fe8".toCharArray());
+
+        final byte[][] standard = new byte[4][];
+        standard[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg+2dATTcA==");
+        standard[1] = StringUtils.getBytesUtf8("K/fMJwH+Q5e0nr7tWsxwkA==");
+        standard[2] = StringUtils.getBytesUtf8("ZL4VS2/6QCWNGgEojnwxyg==");
+        standard[3] = StringUtils.getBytesUtf8("/3+PwBzbRxqMi1qTBhg/6A==");
+
+        final byte[][] urlSafe1 = new byte[4][];
+        // regular padding (two '==' signs).
+        urlSafe1[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA==");
+        urlSafe1[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA==");
+        urlSafe1[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg==");
+        urlSafe1[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A==");
+
+        final byte[][] urlSafe2 = new byte[4][];
+        // single padding (only one '=' sign).
+        urlSafe2[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA=");
+        urlSafe2[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA=");
+        urlSafe2[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg=");
+        urlSafe2[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A=");
+
+        final byte[][] urlSafe3 = new byte[4][];
+        // no padding (no '=' signs).
+        urlSafe3[0] = StringUtils.getBytesUtf8("lO2NAxnkSTOZVg-2dATTcA");
+        urlSafe3[1] = StringUtils.getBytesUtf8("K_fMJwH-Q5e0nr7tWsxwkA");
+        urlSafe3[2] = StringUtils.getBytesUtf8("ZL4VS2_6QCWNGgEojnwxyg");
+        urlSafe3[3] = StringUtils.getBytesUtf8("_3-PwBzbRxqMi1qTBhg_6A");
+
+        for (int i = 0; i < 4; i++) {
+            final byte[] encodedStandard = Base64.encodeBase64(ids[i]);
+            final byte[] encodedUrlSafe = Base64.encodeBase64URLSafe(ids[i]);
+            final byte[] decodedStandard = Base64.decodeBase64(standard[i]);
+            final byte[] decodedUrlSafe1 = Base64.decodeBase64(urlSafe1[i]);
+            final byte[] decodedUrlSafe2 = Base64.decodeBase64(urlSafe2[i]);
+            final byte[] decodedUrlSafe3 = Base64.decodeBase64(urlSafe3[i]);
+
+            // Very important debugging output should anyone
+            // ever need to delve closely into this stuff.
+            if (false) {
+                System.out.println("reference: [" + Hex.encodeHexString(ids[i]) + "]");
+                System.out.println("standard:  [" +
+                        Hex.encodeHexString(decodedStandard) +
+                    "] From: [" +
+                    StringUtils.newStringUtf8(standard[i]) +
+                    "]");
+                System.out.println("safe1:     [" +
+                        Hex.encodeHexString(decodedUrlSafe1) +
+                    "] From: [" +
+                    StringUtils.newStringUtf8(urlSafe1[i]) +
+                    "]");
+                System.out.println("safe2:     [" +
+                        Hex.encodeHexString(decodedUrlSafe2) +
+                    "] From: [" +
+                    StringUtils.newStringUtf8(urlSafe2[i]) +
+                    "]");
+                System.out.println("safe3:     [" +
+                        Hex.encodeHexString(decodedUrlSafe3) +
+                    "] From: [" +
+                    StringUtils.newStringUtf8(urlSafe3[i]) +
+                    "]");
+            }
+
+            assertTrue("standard encode uuid", Arrays.equals(encodedStandard, standard[i]));
+            assertTrue("url-safe encode uuid", Arrays.equals(encodedUrlSafe, urlSafe3[i]));
+            assertTrue("standard decode uuid", Arrays.equals(decodedStandard, ids[i]));
+            assertTrue("url-safe1 decode uuid", Arrays.equals(decodedUrlSafe1, ids[i]));
+            assertTrue("url-safe2 decode uuid", Arrays.equals(decodedUrlSafe2, ids[i]));
+            assertTrue("url-safe3 decode uuid", Arrays.equals(decodedUrlSafe3, ids[i]));
+        }
+    }
+
+    @Test
+    public void testByteToStringVariations() throws DecoderException {
+        final Base64 base64 = new Base64(0);
+        final byte[] b1 = StringUtils.getBytesUtf8("Hello World");
+        final byte[] b2 = new byte[0];
+        final byte[] b3 = null;
+        final byte[] b4 = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());  // for url-safe tests
+
+        assertEquals("byteToString Hello World", "SGVsbG8gV29ybGQ=", base64.encodeToString(b1));
+        assertEquals("byteToString static Hello World", "SGVsbG8gV29ybGQ=", Base64.encodeBase64String(b1));
+        assertEquals("byteToString \"\"", "", base64.encodeToString(b2));
+        assertEquals("byteToString static \"\"", "", Base64.encodeBase64String(b2));
+        assertEquals("byteToString null", null, base64.encodeToString(b3));
+        assertEquals("byteToString static null", null, Base64.encodeBase64String(b3));
+        assertEquals("byteToString UUID", "K/fMJwH+Q5e0nr7tWsxwkA==", base64.encodeToString(b4));
+        assertEquals("byteToString static UUID", "K/fMJwH+Q5e0nr7tWsxwkA==", Base64.encodeBase64String(b4));
+        assertEquals("byteToString static-url-safe UUID", "K_fMJwH-Q5e0nr7tWsxwkA", Base64.encodeBase64URLSafeString(b4));
+    }
+
+    @Test
+    public void testStringToByteVariations() throws DecoderException {
+        final Base64 base64 = new Base64();
+        final String s1 = "SGVsbG8gV29ybGQ=\r\n";
+        final String s2 = "";
+        final String s3 = null;
+        final String s4a = "K/fMJwH+Q5e0nr7tWsxwkA==\r\n";
+        final String s4b = "K_fMJwH-Q5e0nr7tWsxwkA";
+        final byte[] b4 = Hex.decodeHex("2bf7cc2701fe4397b49ebeed5acc7090".toCharArray());  // for url-safe tests
+
+        assertEquals("StringToByte Hello World", "Hello World", StringUtils.newStringUtf8(base64.decode(s1)));
+        assertEquals("StringToByte Hello World", "Hello World", StringUtils.newStringUtf8((byte[])base64.decode((Object)s1)));
+        assertEquals("StringToByte static Hello World", "Hello World", StringUtils.newStringUtf8(Base64.decodeBase64(s1)));
+        assertEquals("StringToByte \"\"", "", StringUtils.newStringUtf8(base64.decode(s2)));
+        assertEquals("StringToByte static \"\"", "", StringUtils.newStringUtf8(Base64.decodeBase64(s2)));
+        assertEquals("StringToByte null", null, StringUtils.newStringUtf8(base64.decode(s3)));
+        assertEquals("StringToByte static null", null, StringUtils.newStringUtf8(Base64.decodeBase64(s3)));
+        assertTrue("StringToByte UUID", Arrays.equals(b4, base64.decode(s4b)));
+        assertTrue("StringToByte static UUID", Arrays.equals(b4, Base64.decodeBase64(s4a)));
+        assertTrue("StringToByte static-url-safe UUID", Arrays.equals(b4, Base64.decodeBase64(s4b)));
+    }
+
+    private String toString(final byte[] data) {
+        final StringBuilder buf = new StringBuilder();
+        for (int i = 0; i < data.length; i++) {
+            buf.append(data[i]);
+            if (i != data.length - 1) {
+                buf.append(",");
+            }
+        }
+        return buf.toString();
+    }
+
+    /**
+     * Tests a lineSeparator much bigger than DEFAULT_BUFFER_SIZE.
+     *
+     * @see "<a href='http://mail-archives.apache.org/mod_mbox/commons-dev/201202.mbox/%3C4F3C85D7.5060706@snafu.de%3E'>dev@commons.apache.org</a>"
+     */
+    @Test
+    @Ignore
+    public void testHugeLineSeparator() {
+        final int BaseNCodec_DEFAULT_BUFFER_SIZE = 8192;
+        final int Base64_BYTES_PER_ENCODED_BLOCK = 4;
+        final byte[] baLineSeparator = new byte[BaseNCodec_DEFAULT_BUFFER_SIZE * 4 - 3];
+        final Base64 b64 = new Base64(Base64_BYTES_PER_ENCODED_BLOCK, baLineSeparator);
+        final String strOriginal = "Hello World";
+        final String strDecoded = new String(b64.decode(b64.encode(StringUtils.getBytesUtf8(strOriginal))));
+        assertEquals("testDEFAULT_BUFFER_SIZE", strOriginal, strDecoded);
+    }
+
+}

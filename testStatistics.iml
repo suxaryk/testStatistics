@@ -5,7 +5,6 @@
     <content url="file://$USER_HOME$/Link to JavaProjects/testStatistics">
       <sourceFolder url="file://$USER_HOME$/Link to JavaProjects/testStatistics/src" isTestSource="false" />
       <sourceFolder url="file://$USER_HOME$/Link to JavaProjects/testStatistics/test" isTestSource="true" />
-      <sourceFolder url="file://$USER_HOME$/Link to JavaProjects/testStatistics/testFolder" isTestSource="true" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

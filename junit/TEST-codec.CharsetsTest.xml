@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="1" failures="0" hostname="suxarykPC" name="codec.CharsetsTest" skipped="0" tests="1" time="0.0" timestamp="2015-05-03T22:37:31">
+  <properties>
+    <property name="java.vendor" value="Oracle Corporation" />
+    <property name="lib.dir" value="lib" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="ant.file.teststatistics" value="/home/suxaryk/Link to JavaProjects/testStatistics/build.xml" />
+    <property name="os.name" value="Linux" />
+    <property name="sun.boot.class.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-7-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-7-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-7-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-7-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-7-oracle/jre/classes" />
+    <property name="ant.file.type.teststatistics" value="file" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="ant.home" value="/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant" />
+    <property name="java.runtime.version" value="1.7.0_80-b15" />
+    <property name="path.variable.maven_repository" value="/home/suxaryk/.m2/repository" />
+    <property name="user.name" value="suxaryk" />
+    <property name="build.dir" value="build" />
+    <property name="user.language" value="ru" />
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-7-oracle/jre/lib/amd64" />
+    <property name="ant.project.default-target" value="all" />
+    <property name="ant.project.name" value="teststatistics" />
+    <property name="java.version" value="1.7.0_80" />
+    <property name="user.timezone" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="root.dir" value=".." />
+    <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/endorsed" />
+    <property name="sun.cpu.isalist" value="" />
+    <property name="sun.jnu.encoding" value="UTF-8" />
+    <property name="file.encoding.pkg" value="sun.io" />
+    <property name="file.separator" value="/" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="classes.dir" value="build/classes" />
+    <property name="java.class.version" value="51.0" />
+    <property name="user.country" value="RU" />
+    <property name="java.home" value="/usr/lib/jvm/java-7-oracle/jre" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="ant.file" value="/home/suxaryk/Link to JavaProjects/testStatistics/build.xml" />
+    <property name="os.version" value="3.13.0-37-generic" />
+    <property name="path.separator" value=":" />
+    <property name="java.vm.version" value="24.80-b11" />
+    <property name="ant.library.dir" value="/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib" />
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
+    <property name="user.home" value="/home/suxaryk" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="test.dir" value="testFolder" />
+    <property name="java.library.path" value="/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
+    <property name="sun.java.command" value="com.intellij.rt.ant.execution.AntMain2 -logger com.intellij.rt.ant.execution.IdeaAntLogger2 -inputhandler com.intellij.rt.ant.execution.IdeaInputHandler -buildfile /home/suxaryk/Link to JavaProjects/testStatistics/build.xml" />
+    <property name="java.class.path" value="/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-antlr.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-bcel.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-bsf.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-log4j.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-oro.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-regexp.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-resolver.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-apache-xalan2.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-commons-logging.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-commons-net.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-jai.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-javamail.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-jdepend.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-jmf.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-jsch.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-junit.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-junit4.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-launcher.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-netrexx.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-swing.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant-testutil.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant.jar:/usr/lib/jvm/java-7-oracle/lib/tools.jar:/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/idea_rt.jar" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.9.4 compiled on April 29 2014" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="sun.os.patch.level" value="unknown" />
+    <property name="java.io.tmpdir" value="/tmp" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
+    <property name="conf.dir" value="etc" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
+    <property name="java.ext.dirs" value="/usr/lib/jvm/java-7-oracle/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="target.report.dir" value="junit" />
+    <property name="user.dir" value="/media/suxaryk/media/Dropbox/JavaProjects/testStatistics" />
+    <property name="line.separator" value="&#xa;" />
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
+    <property name="basedir" value="/home/suxaryk/Link to JavaProjects/testStatistics" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="ant.core.lib" value="/media/suxaryk/media/soft/UNIX/idea-IU-141.178.9/lib/ant/lib/ant.jar" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="java.specification.version" value="1.7" />
+    <property name="src.dir" value="src" />
+    <property name="ant.project.invoked-targets" value="all" />
+  </properties>
+  <error message="codec.CharsetsTest" type="java.lang.ClassNotFoundException">java.lang.ClassNotFoundException: codec.CharsetsTest
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:358)
+	at java.lang.Class.forName0(Native Method)
+	at java.lang.Class.forName(Class.java:278)
+	at com.intellij.rt.ant.execution.AntMain2.main(AntMain2.java:30)
+</error>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

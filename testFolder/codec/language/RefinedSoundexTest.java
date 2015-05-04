@@ -28,7 +28,7 @@ import org.junit.Test;
  *
  * @version $Id: RefinedSoundexTest.html 891688 2013-12-24 20:49:46Z ggregory $
  */
-public class RefinedSoundexTest extends StringEncoderAbstractTest&lt;RefinedSoundex&gt; {
+public class RefinedSoundexTest extends StringEncoderAbstractTest<RefinedSoundex> {
 
     @Override
     protected RefinedSoundex createStringEncoder() {

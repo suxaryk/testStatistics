@@ -31,13 +31,13 @@
 
 
   <target name="run-tests" depends="compile">
-    <junit printsummary="yes"   haltonerror="no" haltonfailure="no">
+    <junit printsummary="yes"  haltonerror="no" haltonfailure="no">
       <formatter type="plain" usefile="false" />
       <formatter type="xml" />
       <batchtest todir="${target.report.dir}">
         <fileset dir="${test.dir}">
           <include name="**/*Test.java" />
-          <exclude name="**/Test*All.java" />
+          <exclude name="**/TEST*All.java" />
         </fileset>
       </batchtest>
       <classpath>
