@@ -23,7 +23,6 @@ public class Database {
 
 
 
-
     public  void writeToDB(List<Path> list)  {
         Connection connection = null;
         PreparedStatement preparedStatement = null;
@@ -49,9 +48,6 @@ public class Database {
             preparedStatement.addBatch();
 
             }
-
-
-
 
             preparedStatement.executeBatch();
 
@@ -89,20 +85,13 @@ public class Database {
         Element element = document.getDocumentElement();
 
 
-
         test.setName(element.getAttribute("name"));
         test.setDateTime(element.getAttribute("timestamp").replace("T", " "));
         test.setResult(Integer.parseInt(element.getAttribute("failures")));
         test.setOutTime(Double.parseDouble(element.getAttribute("time")));
         test.setDscription(document.getElementsByTagName("error").item(0).getTextContent());
 
-//        test = new Test(
-//                element.getAttribute("name"),
-//                element.getAttribute("timestamp").replace("T", " "),
-//                Integer.parseInt(element.getAttribute("failures")),
-//                Long.parseLong(element.getAttribute("time")),
-//                document.getElementsByTagName("error").item(0).getTextContent()
-//        );
+
     }
 
 

@@ -11,17 +11,7 @@ public class Main {
 
 
 
-//        utils.createList(Paths.get("junit"));
-//        utils.sh//owList();
-//        try {
-//            utils.DOMparser(Paths.get("junit/TEST-codec.binary.Base32InputStreamTest.xml"));
-//        } catch (ParserConfigurationException e) {
-//            e.printStackTrace();
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        } catch (SAXException e) {
-//            e.printStackTrace();
-//        }
+
 
 
     }
